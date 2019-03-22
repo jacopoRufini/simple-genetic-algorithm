@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+    <script src="sketch.js"></script>
+    <script src="population.js"></script>
+    <title></title>
+  </head>
+  <body>
+    Population size
+    <input type="number" id="populationSize" min="100" max="9999" value="2000">
+    Mutation rate
+    <input type="number" id="mutationRate" min="0.1" max="1" value="0.1">
+    Difficulty factor
+    <select id="difficultyFactor">
+      <option value="1.5">2.5 (easy)</option>
+      <option value="2.5" selected>3.5 (normal)</option>
+      <option value="3.5">4.5 (hard)</option>
+    </select>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <div id="generations"></div>
+    <div id="fitness"></div>
+  </body>
+</html>
